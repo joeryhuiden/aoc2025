@@ -33,7 +33,24 @@ public class InputFileReader
         }
     }
 
-    public static T? ReadInputFileToObject<T>(string relativePath)
+    public static List<T> ReadInputFileToObjects<T>(string relativePath, string separator)
+    {
+        var inputString = ReadInputFile(relativePath);
+
+        try
+        {
+            var stringArray = inputString.Split(separator).ToArray();
+            var objArray = Array.ConvertAll(stringArray, item => (T)(object)item);
+            return [.. objArray];
+        }
+        catch
+        {
+            Console.WriteLine($"Error while converting to object");
+            throw;
+        }
+    }
+
+    public static T? ReadJsonFileToObject<T>(string relativePath)
     {
         var jsonString = ReadInputFile(relativePath);
 
