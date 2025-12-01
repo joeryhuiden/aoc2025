@@ -27,8 +27,6 @@ foreach (var input in inputs)
     currentpoint = newpoint;
 }
 
-
-
 Console.WriteLine("Done!");
 Console.WriteLine($"result part one: {passedCount}");
 Console.WriteLine($"result part two: {passedCount} + {zeroCount - passedCount} = {zeroCount}");
