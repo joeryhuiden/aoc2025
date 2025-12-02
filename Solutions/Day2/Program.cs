@@ -2,7 +2,7 @@
 using Day2;
 using System.Numerics;
 
-Console.WriteLine("Day 1!");
+Console.WriteLine("Day 2!");
 
 var inputs = InputFileReader.ReadInputFileToObjects<string>("./input.txt", ",") ?? throw new NotSupportedException();
 

@@ -3,7 +3,7 @@
 namespace Day2Tests;
 
 [TestClass]
-public class Testcases
+public class Day2Testcases
 {
     [TestMethod]
     [DataRow("1", true)]

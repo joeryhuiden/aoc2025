@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2", "Solutions\Day2\Day2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F45C367F-2DA3-4822-9888-06F618BC646C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2Tests", "Tests\Day2\Day2Tests.csproj", "{9BE6FD3E-83D7-42B2-852C-443E88B8609D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AocTests", "Tests\Day2\AocTests.csproj", "{9BE6FD3E-83D7-42B2-852C-443E88B8609D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
