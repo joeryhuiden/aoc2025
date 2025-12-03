@@ -1,6 +1,6 @@
 ﻿using Day2;
 
-namespace Day2Tests;
+namespace AocTests;
 
 [TestClass]
 public class Day2Testcases

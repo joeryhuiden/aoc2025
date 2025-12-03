@@ -1,11 +1,5 @@
-﻿using Day2;
-using Day3;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Day3;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AocTests;
 

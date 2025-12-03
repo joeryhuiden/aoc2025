@@ -1,0 +1,48 @@
+
+// Progam.cs:
+
+using AocHelpers;
+
+Console.WriteLine("Day X!");
+
+var inputs = InputFileReader.ReadInputFileToObjects<string>("./input.txt", "\n") ?? throw new NotSupportedException();
+
+Console.WriteLine($"Found {inputs.Count} inputs.");
+Console.WriteLine($"Start solving...");
+
+var resultPart1 = 0;
+var resultPart2 = 0;
+
+Console.WriteLine("Done!");
+Console.WriteLine($"result part one: {resultPart1}");
+Console.WriteLine($"result part two: {resultPart2}");
+Console.ReadKey();
+
+
+// NOTE: input.txt in same folder as Program.cs
+
+
+// Testcases: 
+
+using DayX;
+using System.Numerics;
+
+namespace AocTests;
+
+[TestClass]
+public class DayXTestcases
+{
+    [TestMethod]
+    [DataRow("values", expected)]
+    public void Part1_ReturnsExpected(string input, int expectedResult)
+    {
+        // Arrange
+        var inputNumbers = input.Select(c => c.ToString()).ToArray() ?? [];
+
+        // Act
+        int result = JoltageFinder.FindMaxJoltage(inputNumbers);
+
+        // Assert
+        Assert.AreEqual(expectedResult, result);
+    }
+}
