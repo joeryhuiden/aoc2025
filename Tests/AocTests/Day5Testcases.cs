@@ -3,10 +3,10 @@
 namespace AocTests;
 
 [TestClass]
-public class Day4Testcases
+public class Day5Testcases
 {
     [TestMethod]
-    [DataRow("values", 0)]
+    [DataRow("123", 23)]
     public void Part1_ReturnsExpected(string input, int expectedResult)
     {
         // Arrange

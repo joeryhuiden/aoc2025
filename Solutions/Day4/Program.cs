@@ -29,11 +29,11 @@ Console.WriteLine($"result part one: {resultPart1.Item2}");
 Console.WriteLine($"result part two: {resultPart2}");
 Console.ReadKey();
 
-(char[,], int) FindAccessable(char[,] oldGrid)
+static (char[,], int) FindAccessable(char[,] oldGrid)
 {
     var newGrid = new char[oldGrid.GetLength(0), oldGrid.GetLength(1)];
     var countOfMarked = 0;
-    // Populate the grid (e.g., with the . or @)
+
     for (int i = 0; i < oldGrid.GetLength(0); i++)
     {
         for (int j = 0; j < oldGrid.GetLength(1); j++)
