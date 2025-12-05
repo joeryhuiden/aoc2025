@@ -5,7 +5,8 @@ using AocHelpers;
 
 Console.WriteLine("Day X!");
 
-var inputs = InputFileReader.ReadInputFileToObjects<string>("./input.txt", "\n") ?? throw new NotSupportedException();
+//var inputs = InputFileReader.ReadInputFileToObjects<string>("./input.txt", "\n") ?? throw new NotSupportedException();
+var inputs = InputFileReader.ReadInputFileToObjects<string>("./inputExample.txt", "\n") ?? throw new NotSupportedException();
 
 Console.WriteLine($"Found {inputs.Count} inputs.");
 Console.WriteLine($"Start solving...");
