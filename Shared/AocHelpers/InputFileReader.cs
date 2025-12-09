@@ -24,7 +24,7 @@ public class InputFileReader
         try
         {
             // Read the file using the constructed full path.
-            return File.ReadAllText(fullPath);
+            return File.ReadAllText(fullPath).Trim();
         }
         catch
         {
